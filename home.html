@@ -74,6 +74,8 @@
     				<h3 class="mb-2">Make an Appointment</h3>
     				<form action="#" class="appointment-form">
 	            <div class="row">
+
+					
 	            	<div class="col-sm-4">
 	                <div class="form-group">
 			              <div class="select-wrap">
@@ -131,7 +133,16 @@
     	</div>
     </section>
   
-	<button onclick="mainApp.logOut()">log out</button>
+	<button onclick="mainApp.logOut()" id="log_out">log out</button>
+	<style>
+		#log_out {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+	</style>
+
+	<button onclick="add_data()">Click me</button>
    
 		
   
@@ -166,6 +177,7 @@
 
   <script src="js/fireBase.js"></script>
   <script src="js/home.js"></script>
+  <script src="add_data.js"></script>
     
   </body>
 </html>
