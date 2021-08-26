@@ -42,6 +42,45 @@
 
 </head>
 <body>
+
+		<!-- Loader-------------------------------------------------- -->
+		<div id="loader" style="  padding:0;
+		margin:0;
+		width:100vw;
+		height:100vh;
+		background-color: rgb(40, 149, 221);
+		z-index: 10000000000000000000;
+		display: flex;
+		justify-self: center;
+		align-items: center;">
+			<div class="wrapper">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="shadow"></div>
+				<div class="shadow"></div>
+				<div class="shadow"></div>
+				<span>Loading</span>
+			</div>
+		</div>
+		
+		<!-- Preloader -->
+		<script>
+	
+			document.body.setAttribute("class", "noscroll");
+	
+			document.getElementById("loader").style.display = "flex";
+	
+			window.onload = function() {
+			document.getElementById("loader").style.display = "none";
+	
+			document.body.className = document.body.className.replace(/\bnoscroll\b/,'');
+			}
+	
+		</script>
+	
+		<!-- Main-------------------------------------------------- -->
+	
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('/images/img_login_doctor.jpg');
