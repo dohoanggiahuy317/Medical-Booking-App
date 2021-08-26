@@ -92,6 +92,7 @@ body {
 	font-size: 0.9375rem;
     height: 100%;
 	overflow-x: hidden;
+	
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #272b41;
@@ -2696,7 +2697,7 @@ html.menu-opened body {
 -----------------------*/
 
 .breadcrumb-bar {
-    background-color: #15558d;
+    background-color: rgb(1, 139, 231);
     padding: 15px 0;
 }
 .breadcrumb-bar .breadcrumb-title {
@@ -5163,19 +5164,20 @@ html.menu-opened body {
 }
 
 .appointment-list {
-	height: 15vh;
 	width: 100%;
 	margin: 10px 0 10px 0;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	border: 1px solid black;
 	border-radius: 10px;
+	background-color: white;
 }
 
 .appointment-list p {
-	height: 100%;
-	width: 20%;
+	height: 15vh;
+	width: 40%;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -5186,8 +5188,8 @@ html.menu-opened body {
 }
 
 .appointment-list .patient-details {
-	height: 100%;
-	width: 20%;
+	height: 15vh;
+	width: 40%;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -6015,6 +6017,7 @@ html.menu-opened body {
 		margin-top: 10px;
 	}
 	.appointments .appointment-list {
+		
 		display: block;
 	}
 	.banner-wrapper {
@@ -6639,7 +6642,13 @@ html.menu-opened body {
 		text-align: center;
 	}
 	.appointments .appointment-list {
-		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		border: 1px solid black;
+		border-radius: 10px;
+		background-color: white;
 	}
 	.appointment-list .profile-info-widget {
 		-ms-flex-direction: column;

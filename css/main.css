@@ -168,15 +168,6 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  /* background: #9053c7;
-  background: -webkit-linear-gradient(-135deg, #d13838, #d0c741);
-  background: -o-linear-gradient(-135deg, #d13838, #d0c741);
-  background: -moz-linear-gradient(-135deg, #d13838, #d0c741);
-  background: linear-gradient(-135deg, #d13838, #d0c741); */
-  background-image: url('/images/img2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .wrap-login100 {
@@ -198,7 +189,7 @@ iframe {
 /*------------------------------------------------------------------
 [  ]*/
 .login100-pic {
-  width: 316px;
+  display: flex; justify-content: center; align-items: center;
 }
 
 .login100-pic img {

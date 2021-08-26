@@ -19,14 +19,17 @@ function add_data(){
         phone: user_phone,
     })
     .then(() => {
+        TweenMax.to('#booking_form', 0, {display: 'none', ease: Power1.easeInOut});
+        TweenMax.to('#after_book', 0, {display: 'flex', ease: Power1.easeInOut});
+        TweenMax.to('#after_book', 0.3, {opacity: 1, ease: Power1.easeInOut});
         console.log("Document successfully written!");
-        alert('Booking complete');
-        window.location.replace('index.html')
+        
 
     })
     .catch((error) => {
+        alert('Error');
         console.error("Error writing document: ", error);
-        alert('Booking complete');
+       
         
     });
 

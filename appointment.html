@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
+	<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
 
 
 
@@ -47,7 +50,7 @@
   </head>
   <body>
     
-    <section class="ftco-intro">
+    <section class="ftco-intro" id="booking_form">
     	<div class="container">
     		<div class="row no-gutters">
     			<div class="col-md-3 color-1 p-4">
@@ -132,6 +135,12 @@
     		</div>
     	</div>
     </section>
+
+
+	<div id="after_book">
+		<p id="after_book_thanks">Thank you. Your doctor will contact you soon.</p>
+		<p id="after_book_rebook" onclick="window.location.reload()">Wanna change your booking? Click here</p>
+	</div>
   
 
 
@@ -142,10 +151,22 @@
 			position: absolute;
 			top: 20px;
 			right: 20px;
+			background-color: white;
+			border: black solid 1px;
+			border-radius: 5px;
+			font-size: larger;
+			font-weight: bolder;
+			font-family: ABeeZee;
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		#log_out:hover {
+			background-color: rgb(226, 31, 31);
+			color: white;
 		}
 	</style>
-
-	<!-- <button onclick="add_data()">Click me</button> -->
+	
    
 		
   
@@ -171,6 +192,7 @@
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
 
 

@@ -61,7 +61,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
   display: block; }
 
 html {
-  background-image: url("/images/img2.jpg");
+  background-image: url("/images/img_patient.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7724,7 +7724,9 @@ h1, h2, h3, h4, h5,
       color: #2f89fc; }
 
 .ftco-intro {
-  color: #fff; }
+  color: #fff; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
   .ftco-intro .container {
     margin: 0px; }
     @media (min-width: 768px) {
@@ -7791,6 +7793,7 @@ h1, h2, h3, h4, h5,
       border-bottom: 1px solid rgba(255, 255, 255, 0.4);
       padding-left: 0;
       padding-right: 0 !important; }
+
   .ftco-intro .appointment-form .icon {
     position: absolute;
     top: 50% !important;
@@ -9342,3 +9345,42 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+#after_book {
+  width: 80vw;
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgb(0, 195, 255), rgb(7, 255, 160));
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  cursor: context-menu;
+}
+
+#after_book_thanks {
+  font-size: 40px;
+  font-family: Acme;
+  margin: 60px 40px 80px 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#after_book_thanks:hover {
+  letter-spacing: 3px;
+}
+
+#after_book_rebook {
+  margin: 0 40px 20px 40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#after_book_rebook:hover {
+  color: black;
+}
