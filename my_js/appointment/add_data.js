@@ -10,8 +10,7 @@ function add_data(){
     var user_phone = document.getElementById("appointment_phone").value;
 
     // Add a new document in collection "cities"
-    db.collection("med schedule").doc(user_email).set({
-        department: user_department,
+    db.collection('all data/' + user_department + '/patient').doc(user_email).set({
         name: user_name,
         date: user_date,
         time:user_time,
@@ -19,7 +18,7 @@ function add_data(){
     })
     .then(() => {
         console.log("Document successfully written!");
-        window.location.replace('index.html');
+
     })
     .catch((error) => {
         console.error("Error writing document: ", error);
