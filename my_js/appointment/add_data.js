@@ -9,6 +9,8 @@ function add_data(){
     var user_time = document.getElementById("appointment_time").value;
     var user_phone = document.getElementById("appointment_phone").value;
 
+
+    
     // Add a new document in collection "cities"
     db.collection('all data/' + user_department + '/patient').doc(user_email).set({
         name: user_name,
@@ -18,10 +20,13 @@ function add_data(){
     })
     .then(() => {
         console.log("Document successfully written!");
+        alert('Booking complete');
+        window.location.replace('index.html')
 
     })
     .catch((error) => {
         console.error("Error writing document: ", error);
+        alert('Booking complete');
         
     });
 
